@@ -364,9 +364,10 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
-.ashish-image {
+.ashish-image img{
     width: 280px;
     position: absolute;
+    border-radius: 15%;
     right: 70px;
     bottom: 100px;
     z-index: 1;
