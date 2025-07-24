@@ -1,230 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashish Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4951c1ae73.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4951c1ae73.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/Ashishname.png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            <div class="header-text">
-                <p>Hey,</p>
-                <h1>I'm <br><span class="auto-input"></span></h1>
-                
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-                <script>
-                    let typed = new Typed(".auto-input",{
-                        strings: ["Ashish Kumar", "a Developer", "a Debugger", "a Gamer", "a Graphic Designer", "UI/UX Designer"],
-                        typeSpeed: 100,
-                        backSpeed: 100,
-                        loop : true
-                    })
-                </script>
-            </div>
+      <div class="container">
+        <nav>
+          <img src="images/Ashishname.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Hey,</p>
+          <h1>I'm <br /><span class="auto-input"></span></h1>
+
+          <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+          <script>
+            let typed = new Typed(".auto-input", {
+              strings: [
+                "Ashish Kumar",
+                "a Developer",
+                "a Debugger",
+                "a Gamer",
+                "a Graphic Designer",
+                "UI/UX Designer",
+              ],
+              typeSpeed: 100,
+              backSpeed: 100,
+              loop: true,
+            });
+          </script>
         </div>
+        <div class="pf">
+          <img src="images/ashish.png" />
+        </div>
+      </div>
     </div>
-   <div id="about">
-    <div class="container">
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/ashish.png">
+          <div class="about-col-1">
+            <img src="images/ashish.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a Web Developer at Chirag Solutions. I am leaned towards
+              technology and love to do programming. I have running hands-on C,
+              Python, Java, MySQL, PHP, Wordpress, Shopify, Laravel & HTML, and
+              I have basic knowledge of C++ and CSS. I have worked for clients
+              and used Wordpress & Elementor.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>I am a fresher Software Engineer. I am leaning towards technology and love to do programming. I have running hands-on C, Python, Java, MySQL, PHP, and HTML, and I have basic knowledge of C++ and CSS. I love to solve problems and have been solving DSA problems. I had some experience in competitive programming as well.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('Education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/Application interfaces</li>
-                        <li><span>Web Development</span><br>Web-app Development | HTML | CSS | JavaScript</li>
-                        <li><span>C | C++</span><br>Basics | Functions | Data Structures</li>
-                        <li><span>Java</span><br>Basics | Class & Objects | Data Structures and Algorithms | Packages</li>
-                        <li><span>Python</span><br>Basics | Pandas | NumPy | Matplotlib | Tkinter | Django</li>
-                        <li><span>MySQL</span><br>Database Management System | RDBMS | PLSQL</li>
-                        <li><span>Perl</span><br>Basics</li>
-                        <li><span>Linux Environment</span><br>Basic Commands</li>
-                    </ul>
-                </div>
-                 <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>TABLEAU Developer Internship</span><br>Worked as a TABLEAU Developer intern at TATA STEEL LONG PRODUCTS.LTD</li>
-                        <li><span>Cyber Security Internship</span><br>Worked as a Cyber Security intern at TATA STEEL LTD.</li>
-                        <li><span>Android Development Internship</span><br>Worked as an Android App Development intern at Oasis Infobyte.</li>
-                        <li><span>DISEASE DETECTOR Project</span><br>Mini Project using Pandas, NumPy and Tkinter modules.</li>
-                        <li><span>Currency Converter Project</span><br>Mini Project using HTML, CSS, Javascript, and Reactjs.</li>
-                        <li><span>Password Validator Project</span><br>Mini Project using HTML, CSS, and Javascript.</li>
-                        <li><span>Web Development Internship</span><br>Worked as a team lead and front-end developer at Tata Motors Ltd.</li>
-                    </ul>
-                </div>
-                 <div class="tab-contents" id="Education">
-                    <ul>
-                        <li><span>AISSE(2017)</span><br>Passed out from Chinmaya Vidyalaya - South Park, Bistupur with 95%.</li>
-                        <li><span>AISSCE(2019)</span><br>Passed out from DAV Public School - Bistupur with 76.2% [PCMC]</li>
-                        <li><span>Under-Graduation(2020-2024)</span><br>B.TECH [CSE] degree from University of Engineering & Management, Jaipur with 8.15 SGPA overall </li>
-                    </ul>
-                </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br />Designing Web/Application interfaces
+                </li>
+                <li>
+                  <span>Web Development</span><br />Web-app Development | HTML |
+                  CSS | JavaScript | Wordpress
+                </li>
+                <li>
+                  <span>Java</span><br />Basics | Class & Objects | Data
+                  Structures and Algorithms | Packages
+                </li>
+                <li>
+                  <span>Python</span><br />Basics | Pandas | NumPy | Matplotlib
+                  | Tkinter | Django
+                </li>
+                <li>
+                  <span>MySQL</span><br />Database Management System | RDBMS |
+                  PLSQL | MYSQL
+                </li>
+              </ul>
             </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li>
+                  <span>TABLEAU Developer Internship</span><br />Worked as a
+                  TABLEAU Developer intern at TATA STEEL LONG PRODUCTS.LTD
+                </li>
+                <li>
+                  <span>Cyber Security Internship</span><br />Worked as a Cyber
+                  Security intern at TATA STEEL LTD.
+                </li>
+                <li>
+                  <span>Android Development Internship</span><br />Worked as an
+                  Android App Development intern at Oasis Infobyte.
+                </li>
+                <li>
+                  <span>Web Development Internship</span><br />Worked as a team
+                  lead and front-end developer at Tata Motors Ltd.
+                </li>
+                <li>
+                  <span>Web Developer</span><br />Working as a Web Developer at
+                  Chirag Solutions.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>AISSE(2017)</span><br />Passed out from Chinmaya
+                  Vidyalaya - South Park, Bistupur with 95%.
+                </li>
+                <li>
+                  <span>AISSCE(2019)</span><br />Passed out from DAV Public
+                  School - Bistupur with 76.2% [PCMC]
+                </li>
+                <li>
+                  <span>Under-Graduation(2020-2024)</span><br />B.TECH [CSE]
+                  degree from University of Engineering & Management, Jaipur
+                  with 8.15 CGPA overall
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-   </div>
-   <div id="services">
-    <div class="container">
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
-                <p>I like to code things from scratch and enjoy bringing ideas to life in the browser. I value simple content structure, clean design patterns, and thoughtful interactions.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>Android Development</h2>
-                <p>I love new technologies and am always looking for interesting and challenging projects to work on. Currently, I’m digging into Flutter for cross-platform development and SwiftUI for future native iOS projects.</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>I love collaboration, playful UI ✨ and inclusive practices. As a designer, I’m passionate about solving tough customer problems by combining thoughtful research, clever technology and beautiful design. </p>
-                <a href="#">Learn More</a>
-            </div>
-        </div>    
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I like to code things from scratch and enjoy bringing ideas to
+              life in the browser. I value simple content structure, clean
+              design patterns, and thoughtful interactions.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Android Development</h2>
+            <p>
+              I love new technologies and am always looking for interesting and
+              challenging projects to work on. Currently, I’m digging into
+              Flutter for cross-platform development and SwiftUI for future
+              native iOS projects.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I love collaboration, playful UI ✨ and inclusive practices. As a
+              designer, I’m passionate about solving tough customer problems by
+              combining thoughtful research, clever technology and beautiful
+              design.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-   <div id="portfolio">
-    <div class="container">
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Disease Detector using ML</h3>
-                    <p>This Machine Learning project is used to predict the disease based on the symptoms given by the user.
-                        It predicts using three different machine learning algorithms and the person using it can select the accurate output.It uses tkinter for GUI.
-                        Working for more accuracy with more datasets.
-                        </p>
-                    <a href="https://github.com/Ashish-Kumar03/Disease-Detector"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Namaste Jharkhand</h3>
+              <p>
+                This is a Wordpress project which I have made using Elementor,
+                HTML, CSS, Themes and desired plugins for client. Still working
+                on it and making it responsive.
+              </p>
+              <a href="https://namastejharkhand.in/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Calculator Application</h3>
-                    <p>Calculator application with user-friendly UI. It is used to perform basic operations. Further more features of the scientific calculator will be added up.</p>
-                    <a href="https://github.com/Ashish-Kumar03/github.io.claculator_app-OIBSIP-Task2"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Siya Consultancy</h3>
+              <p>
+                Siya Consultancy is a website for e-filing purposes. I have made
+                it using Wordpress, custom CSS and used desired theme & plugins
+                for making the best structure. I am working to make it fully
+                responsive.
+              </p>
+              <a href="https://siyaconsultancy.com/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-3.png" alt="image">
-                <div class="layer">
-                    <h3>Currency Converter</h3>
-                    <p>Currency Converter app to convert currencies of various countries. It is also used for checking the rates at the current moment as live data is been fetched from API.</p>
-                    <a href="https://currencyconverter99.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="image" />
+            <div class="layer">
+              <h3>Currency Converter</h3>
+              <p>
+                Currency Converter app to convert currencies of various
+                countries. It is also used for checking the rates at the current
+                moment as live data is been fetched from API.
+              </p>
+              <a href="https://currencyconverter99.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="images/work-4.png" alt="image">
-                <div class="layer">
-                    <h3>Hangman Game</h3>
-                    <p>HANGMAN - A word guessing game using Javascript with interactive layout.</p>
-                    <a href="https://hangmangame03.netlify.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="images/work-4.png" alt="image" />
+            <div class="layer">
+              <h3>Hangman Game</h3>
+              <p>
+                HANGMAN - A word guessing game using Javascript with interactive
+                layout.
+              </p>
+              <a href="https://hangmangame03.netlify.app/"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
         </div>
         <a href="#" class="btn">See More</a>
+      </div>
     </div>
-   </div>
-   <div id="contact">
-    <div class="container">
+    <div id="contact">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h3 class="sub-title">Contact Me</h3>
-                <p><i class="fa-solid fa-paper-plane"></i> prince032000@gmail.com</p>
-                <p><i class="fa-solid fa-square-phone"></i> +91-6204706039</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://github.com/Ashish-Kumar03"><i class="fa fa-github" style="font-size:24px"></i></a>
-                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-                <a href="images/ASHISH KUMAR_CV.pdf" download class="btn btn2">Download CV</a>
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> prince032000@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +91-6204706039</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/Ashish-Kumar03"
+                ><i class="fa fa-github" style="font-size: 24px"></i
+              ></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/feed/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+            <a href="images/ASHISH KUMAR_CV.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © 2022 Ashish Kumar <i class="fa-solid fa-heart"></i>,
+          <br />Inc. All rights reserved.
+        </p>
+      </div>
     </div>
-    <div class="copyright">
-        <p>Copyright © 2022 Ashish Kumar <i class="fa-solid fa-heart"></i>, <br>Inc. All rights reserved.</p>
-    </div>
-   </div>
-   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
-   </script> 
-   <script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-    }
-   </script>
-   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDMhLVk0lXtc3lfgDBUsZOXpQvvwkwtYMBPo_EndHCXjCRF61Pcmrr578lTgn31VrKQQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully."
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyDMhLVk0lXtc3lfgDBUsZOXpQvvwkwtYMBPo_EndHCXjCRF61Pcmrr578lTgn31VrKQQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully.";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
